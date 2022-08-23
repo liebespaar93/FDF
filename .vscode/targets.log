@@ -1,0 +1,1262 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Tue Aug 23 11:33:16 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+ 
+?F = $(notdir $?)
+# makefile (from `Makefile', line 99)
+SRC_MLX_POLYGON_DIR = $(SRC_MLX_DIR)/src_polygon
+# makefile (from `Makefile', line 111)
+FT_PRINTF = $(FT_PRINTF_DIR)/libftprintf.a
+# makefile (from `Makefile', line 25)
+IFLAGS = -I $(INCLUDE_DIR) -I $(INCLUDE_LIBFT_DIR) -I $(INCLUDE_FT_PRINTF_DIR) -I $(INCLUDE_MINILIBX_SELECT_DIR) -I $(INCLUDE_MLX_DIR)
+# makefile (from `Makefile', line 19)
+TARGET = fdf
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 66)
+FG_CYAN = \033[36m
+# makefile (from `Makefile', line 57)
+BG_MAKE2 = \033[48;5;238m
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 35)
+LDLIBS = -lft -lftprintf -lmlx -lm -framework OpenGL -framework AppKit
+# makefile
+CURDIR := /Users/kyoulee/Documents/git/FDF
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 74)
+FG_LCYAN = \033[96m
+# makefile (from `Makefile', line 90)
+SRC_FDF_DIR = $(ROOTDIR)/src_fdf
+# makefile (from `Makefile', line 23)
+CFLAGS = -Wall -Werror -Wextra
+# makefile (from `Makefile', line 196)
+SRC_MLX_SCREAN_C = $(addprefix $(SRC_MLX_SCREAN_DIR)/, $(SRC_MLX_SCREAN_C_SRC))
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 115)
+MINILIBX_DIR = $(ROOTDIR)/modules/minilibx
+# makefile (from `Makefile', line 184)
+SRC_MLX_PARAM_C_SRC = ft_param.c
+# makefile (from `Makefile', line 72)
+FG_LBLUE = \033[94m
+# makefile (from `Makefile', line 146)
+SRC_MLX_BASIS_C_SRC = ft_basis2.c
+# makefile (from `Makefile', line 82)
+CL_HIDDEN = \033[8m
+# makefile (from `Makefile', line 103)
+OBJ_DIR = $(ROOTDIR)/obj
+# makefile (from `Makefile', line 22)
+CXXFLAGS = $(NULL)
+# makefile (from `Makefile', line 68)
+FG_DGREY = \033[90m
+# makefile (from `Makefile', line 100)
+SRC_MLX_SCREAN_DIR = $(SRC_MLX_DIR)/src_screan
+# makefile (from `Makefile', line 73)
+FG_LMAGENTA = \033[95m
+# makefile (from `Makefile', line 135)
+INCLUDE_MINILIBX_MMS_DIR = $(MINILIBX_MMS_DIR)
+# makefile (from `Makefile', line 47)
+BG_LGREY = \033[47m
+# makefile (from `Makefile', line 158)
+SRC_MLX_LOOP_C = $(addprefix $(SRC_MLX_LOOP_DIR)/, $(SRC_MLX_LOOP_C_SRC))
+# makefile (from `Makefile', line 105)
+INCLUDE_MLX_DIR = $(SRC_MLX_DIR)/include
+# makefile (from `Makefile', line 45)
+BG_MAGENTA = \033[45m
+# makefile (from `Makefile', line 113)
+INCLUDE_FT_PRINTF_DIR = $(FT_PRINTF_DIR)/include
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# makefile (from `Makefile', line 42)
+BG_GREEN = \033[42m
+# makefile (from `Makefile', line 177)
+SRC_MLX_MOUSE_C_SRC = ft_mac_mouse_down.c ft_mac_mouse_drag.c ft_mac_mouse_up.c ft_mac_mouse.c
+# makefile (from `Makefile', line 75)
+FG_WHITE = \033[97m
+# makefile (from `Makefile', line 217)
+OBJS_CLEAN = $(OBJS)
+# makefile (from `Makefile', line 64)
+FG_BLUE = \033[34m
+# environment
+VSCODE_CWD = /
+# makefile (from `Makefile', line 160)
+SRC_MLX_MATRIX_C_SRC = ft_matrix_2_mult.c ft_matrix_2.c ft_matrix_3_mult.c ft_matrix_3.c ft_matrix_4_mult.c ft_matrix_4_rotation.c ft_matrix_4.c
+# makefile (from `Makefile', line 144)
+SRC_FDF_C = $(addprefix $(SRC_FDF_DIR)/, $(SRC_FDF_C_SRC))
+# environment
+PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# makefile (from `Makefile', line 49)
+BG_LRED = \033[101m
+# makefile (from `Makefile', line 71)
+FG_LYELLOW = \033[93m
+# makefile (from `Makefile', line 96)
+SRC_MLX_KEYBOARD_DIR = $(SRC_MLX_DIR)/src_mlx_keyboard
+# makefile (from `Makefile', line 104)
+INCLUDE_DIR = $(ROOTDIR)/include
+# makefile (from `Makefile', line 201)
+SRC_MLX_VECTOR_C = $(addprefix $(SRC_MLX_VECTOR_DIR)/, $(SRC_MLX_VECTOR_C_SRC))
+# makefile (from `Makefile', line 43)
+BG_YELLOW = \033[43m
+# makefile (from `Makefile', line 70)
+FG_LGREEN = \033[92m
+# makefile (from `Makefile', line 41)
+BG_RED = \033[41m
+# makefile (from `Makefile', line 58)
+BG_MAKE3 = \033[48;5;240m
+# makefile (from `Makefile', line 101)
+SRC_MLX_VECTOR_DIR = $(SRC_MLX_DIR)/src_vector
+# makefile (from `Makefile', line 188)
+SRC_MLX_POLYGON_C_SRC = ft_polygon_transform.c ft_polygon.c ft_primitive.c
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 31)
+LDFLAGS = -L $(LIBFT_DIR) -L $(FT_PRINTF_DIR) -L $(MINILIBX_SELECT_DIR)
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 108)
+LIBFT_DIR = $(ROOTDIR)/modules/Libft
+# makefile (from `Makefile', line 148)
+SRC_MLX_BASIS_C = $(addprefix $(SRC_MLX_BASIS_DIR)/, $(SRC_MLX_BASIS_C_SRC))
+# makefile (from `Makefile', line 170)
+SRC_MLX_KEYBOARD_C_SRC = ft_mac_key_down.c ft_mac_key_hold.c ft_mac_key_up.c ft_mac_keyboard.c
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Xd69dUNgeM/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `Makefile', line 91)
+SRC_MLX_DIR = $(ROOTDIR)/src_mlx
+ 
+# makefile (from `Makefile', line 130)
+MINILIBX_MACOS_DIR = $(MINILIBX_DIR)/minilibx_macos
+# makefile (from `Makefile', line 24)
+DFLAGS = $(NULL)
+# makefile (from `Makefile', line 204)
+OBJS = $(SRC_C:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_FDF_C:$(SRC_FDF_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_BASIS_C:$(SRC_MLX_BASIS_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_DRAW_C:$(SRC_MLX_DRAW_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_LOOP_C:$(SRC_MLX_LOOP_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_MATRIX_C:$(SRC_MLX_MATRIX_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_KEYBOARD_C:$(SRC_MLX_KEYBOARD_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_MOUSE_C:$(SRC_MLX_MOUSE_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_PARAM_C:$(SRC_MLX_PARAM_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_POLYGON_C:$(SRC_MLX_POLYGON_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_SCREAN_C:$(SRC_MLX_SCREAN_DIR)/%.c=$(OBJ_DIR)/%.o) $(SRC_MLX_VECTOR_C:$(SRC_MLX_VECTOR_DIR)/%.c=$(OBJ_DIR)/%.o)
+# environment
+PWD = /Users/kyoulee/Documents/git/FDF
+# makefile (from `Makefile', line 53)
+BG_LMAGENTA = \033[105m
+# makefile (from `Makefile', line 124)
+MINILIBX_SELECT_DIR = $(MINILIBX_MACOS_DIR)
+# makefile (from `Makefile', line 186)
+SRC_MLX_PARAM_C = $(addprefix $(SRC_MLX_PARAM_DIR)/, $(SRC_MLX_PARAM_C_SRC))
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# makefile (from `Makefile', line 80)
+CL_BLINK = \033[5m
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/kyoulee
+# makefile (from `Makefile', line 98)
+SRC_MLX_PARAM_DIR = $(SRC_MLX_DIR)/src_param
+# makefile (from `Makefile', line 138)
+SRC_C_SRC = main.c
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/kyoulee/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# makefile (from `Makefile', line 182)
+SRC_MLX_MOUSE_C = $(addprefix $(SRC_MLX_MOUSE_DIR)/, $(SRC_MLX_MOUSE_C_SRC))
+# environment
+LOGNAME = kyoulee
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from `Makefile', line 150)
+SRC_MLX_DRAW_C_SRC = ft_backbuffer.c ft_draw.c ft_scanline.c
+# makefile (from `Makefile', line 168)
+SRC_MLX_MATRIX_C = $(addprefix $(SRC_MLX_MATRIX_DIR)/, $(SRC_MLX_MATRIX_C_SRC))
+# makefile (from `Makefile', line 133)
+MINILIBX_MMS = $(MINILIBX_MMS_DIR)/libmlx.dylib
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 65)
+FG_MAGENTA = \033[35m
+# makefile (from `Makefile', line 97)
+SRC_MLX_MOUSE_DIR = $(SRC_MLX_DIR)/src_mlx_mouse
+# makefile (from `Makefile', line 156)
+SRC_MLX_LOOP_C_SRC = ft_loop.c
+# environment
+XPC_FLAGS = 0x0
+# makefile (from `Makefile', line 95)
+SRC_MLX_MATRIX_DIR = $(SRC_MLX_DIR)/src_matrix
+# makefile (from `Makefile', line 78)
+CL_DIM = \033[2m
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 107)
+LIBFT = $(LIBFT_DIR)/libft.a
+# makefile (from `Makefile', line 21)
+CC = cc
+# makefile (from `Makefile', line 54)
+BG_LCYAN = \033[106m
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = kyoulee
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 77)
+CL_BOLD = \033[1m
+# makefile (from `Makefile', line 63)
+FG_YELLOW = \033[33m
+# makefile (from `Makefile', line 129)
+MINILIBX_MACOS = $(MINILIBX_MACOS_DIR)/libmlx.a
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile', line 52)
+BG_LBLUE = \033[104m
+# makefile (from `Makefile', line 175)
+SRC_MLX_KEYBOARD_C = $(addprefix $(SRC_MLX_KEYBOARD_DIR)/, $(SRC_MLX_KEYBOARD_C_SRC))
+# makefile (from `Makefile', line 48)
+BG_DGREY = \033[100m
+# makefile (from `Makefile', line 123)
+MINILIBX_SELECT = $(MINILIBX_MACOS)
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# makefile (from `Makefile', line 67)
+FG_LGREY = \033[37m
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/3l/_b_4697s3xj0ly4vm2tfkzk80000gn/T/
+# automatic
+*F = $(notdir $*)
+# makefile (from `Makefile', line 81)
+CL_INVERT = \033[7m
+# makefile (from `Makefile', line 62)
+FG_GREEN = \033[32m
+# environment
+VSCODE_IPC_HOOK = /Users/kyoulee/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile (from `Makefile', line 55)
+BG_WHITE = \033[107m
+# makefile
+MAKEFLAGS = Rrqp
+# makefile (from `Makefile', line 44)
+BG_BLUE = \033[44m
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MAIL = kyoulee@student.42seoul.kr
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.4593531.4593537
+# makefile (from `Makefile', line 134)
+MINILIBX_MMS_DIR = $(MINILIBX_DIR)/minilibx_mms_20191025_beta
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 46)
+BG_CYAN = \033[46m
+# makefile (from `Makefile', line 69)
+FG_LRED = \033[91m
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 142)
+SRC_FDF_C_SRC = 
+# makefile (from `Makefile', line 140)
+SRC_C = $(addprefix $(SRC_DIR)/, $(SRC_C_SRC))
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# makefile (from `Makefile', line 109)
+INCLUDE_LIBFT_DIR = $(LIBFT_DIR)/include
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x3:0x33
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 154)
+SRC_MLX_DRAW_C = $(addprefix $(SRC_MLX_DRAW_DIR)/, $(SRC_MLX_DRAW_C_SRC))
+# makefile (from `Makefile', line 321)
+MODULE_CLEAN = clean
+# makefile (from `Makefile', line 89)
+SRC_DIR = $(ROOTDIR)/src
+# makefile (from `Makefile', line 112)
+FT_PRINTF_DIR = $(ROOTDIR)/modules/ft_printf
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 50)
+BG_LGREEN = \033[102m
+# makefile (from `Makefile', line 61)
+FG_RED = \033[31m
+# makefile (from `Makefile', line 194)
+SRC_MLX_SCREAN_C_SRC = ft_screan.c
+# makefile (from `Makefile', line 131)
+INCLUDE_MINILIBX_MACOS_DIR = $(MINILIBX_MACOS_DIR)
+# makefile (from `Makefile', line 93)
+SRC_MLX_DRAW_DIR = $(SRC_MLX_DIR)/src_draw
+# makefile (from `Makefile', line 60)
+FG_BLACK = \033[30m
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 125)
+INCLUDE_MINILIBX_SELECT_DIR = $(INCLUDE_MINILIBX_MACOS_DIR)
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 94)
+SRC_MLX_LOOP_DIR = $(SRC_MLX_DIR)/src_loop
+# makefile (from `Makefile', line 92)
+SRC_MLX_BASIS_DIR = $(SRC_MLX_DIR)/src_basis
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 126)
+MINILIBX_SELECT_CLEAN = clean_minilibx_macos
+# makefile (from `Makefile', line 88)
+ROOTDIR = $(abspath $(dir $(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))))
+# makefile (from `Makefile', line 79)
+CL_UDLINE = \033[4m
+# makefile (from `Makefile', line 56)
+BG_MAKE1 = \033[48;5;236m
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 602
+# makefile (from `Makefile', line 192)
+SRC_MLX_POLYGON_C = $(addprefix $(SRC_MLX_POLYGON_DIR)/, $(SRC_MLX_POLYGON_C_SRC))
+# makefile (from `Makefile', line 51)
+BG_LYELLOW = \033[103m
+# makefile (from `Makefile', line 84)
+NO_COLOR = \033[0m
+# makefile (from `Makefile', line 198)
+SRC_MLX_VECTOR_C_SRC = ft_vector_2.c ft_vector_3.c
+# variable set hash-table stats:
+# Load=173/1024=17%, Rehash=0, Collisions=68/549=12%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse (device 16777229, inode 4626701): 6 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_draw (device 16777229, inode 4626677): 5 files, no impossibilities.
+# . (device 16777229, inode 4626282): 18 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src (device 16777229, inode 4731775): 3 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_screan (device 16777229, inode 4626715): 3 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_fdf (device 16777229, inode 4731802): 2 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon (device 16777229, inode 4626711): 5 files, no impossibilities.
+ 
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_loop (device 16777229, inode 4626682): 3 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_basis (device 16777229, inode 4626674): 3 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_vector (device 16777229, inode 4626718): 4 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_param (device 16777229, inode 4626708): 3 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard (device 16777229, inode 4626694): 6 files, no impossibilities.
+# /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix (device 16777229, inode 4626685): 9 files, no impossibilities.
+
+# 70 files, no impossibilities in 13 directories.
+
+# Implicit Rules
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src/%.c
+#  commands to execute (from `Makefile', line 237):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_fdf/%.c
+#  commands to execute (from `Makefile', line 240):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_basis/%.c
+#  commands to execute (from `Makefile', line 243):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_draw/%.c
+#  commands to execute (from `Makefile', line 246):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_loop/%.c
+#  commands to execute (from `Makefile', line 249):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/%.c
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/%.c
+#  commands to execute (from `Makefile', line 255):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/%.c
+#  commands to execute (from `Makefile', line 258):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_param/%.c
+#  commands to execute (from `Makefile', line 261):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon/%.c
+#  commands to execute (from `Makefile', line 264):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_screan/%.c
+#  commands to execute (from `Makefile', line 267):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/%.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_vector/%.c
+#  commands to execute (from `Makefile', line 270):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# 12 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+/Users/kyoulee/Documents/git/FDF/modules/Libft/libft.a:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-23 10:51:38
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 277):
+	echo "$(FG_MAGENTA)module $(FG_LYELLOW)Libft$(NO_COLOR) -> $(FG_LCYAN)$(LIBFT)$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(LIBFT_DIR) bonus
+	@echo "$(NO_COLOR)"
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon/ft_polygon_transform.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:05:12
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/modules/minilibx/minilibx_mms_20191025_beta/libmlx.dylib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 292):
+	echo "$(FG_MAGENTA)module $(FG_LYELLOW)minilibx_mms$(NO_COLOR) -> $(FG_LCYAN)$(MINILIBX_MMS)$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(MINILIBX_MMS_DIR)
+	cp $(MINILIBX_MMS) $(ROOTDIR)/
+	@echo "$(NO_COLOR)"
+	
+
+/Users/kyoulee/Documents/git/FDF/obj:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-23 11:32:49
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 234):
+	mkdir $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon/ft_primitive.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:10:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse_drag.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 10:31:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_vector/ft_vector_2.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:26:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: /Users/kyoulee/Documents/git/FDF/obj fdf
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_4_rotation.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:26:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: all re clean fclean clean_libft clean_minilibx_macos cleanminilibx_mms m1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_loop/ft_loop.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:10:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_2.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:27:17
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse_down.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:08:45
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_draw/ft_backbuffer.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 10:31:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+cleanminilibx_mms:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_2_mult.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:08:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_keyboard.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_keyboard.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_keyboard'
+#  Last modified 2022-08-23 11:32:49
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 255):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:32:47
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_4.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:09:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_keyboard.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:13:09
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse_up.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:08:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+debug:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 273):
+	$(CC) main.c $(CFLAGS) $(IFLAGS) $(LDFLAGS) $(LDLIBS) $(OBJS) -g3 -fsanitize=address
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_matrix_4_rotation.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_4_rotation.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_matrix_4_rotation'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_vector_2.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_vector/ft_vector_2.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_vector_2'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 270):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_4_mult.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:09:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_draw/ft_draw.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 13:35:24
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_screan.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_screan/ft_screan.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_screan'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 267):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_matrix_2.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_2.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_matrix_2'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/modules/ft_printf/libftprintf.a:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-23 10:00:12
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 282):
+	echo "$(FG_MAGENTA)module $(FG_LYELLOW)ft_printf$(NO_COLOR) -> $(FG_LCYAN)$(FT_PRINTF)$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(FT_PRINTF_DIR) bonus
+	@echo "$(NO_COLOR)"
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_draw/ft_scanline.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 13:02:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+bonus: /Users/kyoulee/Documents/git/FDF/obj fdf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_polygon_transform.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon/ft_polygon_transform.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_polygon_transform'
+#  Last modified 2022-08-23 11:31:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 264):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_vector/ft_vector_3.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:25:47
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_param.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_param/ft_param.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_param'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 261):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# makefile (from `Makefile', line 327)
+# MODULE_CLEAN = fclean
+# makefile (from `Makefile', line 326)
+# OBJS_CLEAN += $(TARGET)
+# variable set hash-table stats:
+# Load=2/32=6%, Rehash=0, Collisions=0/3=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_matrix_2_mult.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_2_mult.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_matrix_2_mult'
+#  Last modified 2022-08-23 10:51:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_key_up.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_key_up.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_key_up'
+#  Last modified 2022-08-23 11:32:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 255):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_screan/ft_screan.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 10:31:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+m1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_matrix_4.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_4.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_matrix_4'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_key_up.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 10:31:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_primitive.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon/ft_primitive.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_primitive'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 264):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_3.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:26:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_mouse'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 258):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:11:10
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_matrix_4_mult.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_4_mult.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_matrix_4_mult'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_3_mult.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 12:09:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse_up.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse_up.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_mouse_up'
+#  Last modified 2022-08-23 11:31:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 258):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_basis/ft_basis2.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 13:35:12
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_backbuffer.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_draw/ft_backbuffer.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_backbuffer'
+#  Last modified 2022-08-23 10:51:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 246):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+clean: clean_libft clean_minilibx_macos
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 324):
+	rm -f $(OBJS_CLEAN)
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_basis2.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_basis/ft_basis2.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_basis2'
+#  Last modified 2022-08-23 10:51:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 243):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+clean_ft_printf:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 306):
+	@echo "clean $(FG_MAGENTA)module $(FG_LYELLOW)$(notdir $(FT_PRINTF))$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(FT_PRINTF_DIR) $(MODULE_CLEAN)
+	@echo "$(NO_COLOR)"
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_loop.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_loop/ft_loop.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_loop'
+#  Last modified 2022-08-23 11:31:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 249):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon/ft_polygon.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:06:21
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_vector_3.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_vector/ft_vector_3.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_vector_3'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 270):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_param/ft_param.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-21 10:03:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse_drag.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse_drag.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_mouse_drag'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 258):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_matrix_3.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_3.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_matrix_3'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/main.o: /Users/kyoulee/Documents/git/FDF/src/main.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `main'
+#  Last modified 2022-08-23 11:31:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 237):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+ 
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_key_down.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-23 11:16:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/modules/minilibx/minilibx_macos/libmlx.a:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-23 10:51:40
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 287):
+	echo "$(FG_MAGENTA)module $(FG_LYELLOW)minilibx_macos$(NO_COLOR) -> $(FG_LCYAN)$(MINILIBX_MACOS)$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(MINILIBX_MACOS_DIR)
+	@echo "$(NO_COLOR)"
+	
+
+clean_libft:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 301):
+	@echo "clean $(FG_MAGENTA)module $(FG_LYELLOW)$(notdir $(LIBFT))$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(LIBFT_DIR) $(MODULE_CLEAN)
+	@echo "$(NO_COLOR)"
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 10:31:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_polygon.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_polygon/ft_polygon.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_polygon'
+#  Last modified 2022-08-23 11:31:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 264):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_draw.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_draw/ft_draw.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_draw'
+#  Last modified 2022-08-23 10:51:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 246):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_key_hold.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_key_hold.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_key_hold'
+#  Last modified 2022-08-23 11:32:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 255):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_key_down.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_key_down.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_key_down'
+#  Last modified 2022-08-23 11:32:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 255):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_matrix_3_mult.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_matrix/ft_matrix_3_mult.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_matrix_3_mult'
+#  Last modified 2022-08-23 10:51:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 252):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_scanline.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_draw/ft_scanline.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_scanline'
+#  Last modified 2022-08-23 10:51:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 246):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+/Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_keyboard/ft_mac_key_hold.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-20 10:31:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse_down.o: /Users/kyoulee/Documents/git/FDF/src_mlx/src_mlx_mouse/ft_mac_mouse_down.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_mac_mouse_down'
+#  Last modified 2022-08-23 11:31:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 258):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+clean_minilibx_macos:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 311):
+	@echo "clean $(FG_MAGENTA)module $(FG_LYELLOW)$(notdir $(MINILIBX_SELECT))$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(MINILIBX_SELECT_DIR) clean 
+	@echo "$(NO_COLOR)"
+	
+
+fdf: /Users/kyoulee/Documents/git/FDF/obj/main.o /Users/kyoulee/Documents/git/FDF/obj/ft_basis2.o /Users/kyoulee/Documents/git/FDF/obj/ft_backbuffer.o /Users/kyoulee/Documents/git/FDF/obj/ft_draw.o /Users/kyoulee/Documents/git/FDF/obj/ft_scanline.o /Users/kyoulee/Documents/git/FDF/obj/ft_loop.o /Users/kyoulee/Documents/git/FDF/obj/ft_matrix_2_mult.o /Users/kyoulee/Documents/git/FDF/obj/ft_matrix_2.o /Users/kyoulee/Documents/git/FDF/obj/ft_matrix_3_mult.o /Users/kyoulee/Documents/git/FDF/obj/ft_matrix_3.o /Users/kyoulee/Documents/git/FDF/obj/ft_matrix_4_mult.o /Users/kyoulee/Documents/git/FDF/obj/ft_matrix_4_rotation.o /Users/kyoulee/Documents/git/FDF/obj/ft_matrix_4.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_key_down.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_key_hold.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_key_up.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_keyboard.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse_down.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse_drag.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse_up.o /Users/kyoulee/Documents/git/FDF/obj/ft_mac_mouse.o /Users/kyoulee/Documents/git/FDF/obj/ft_param.o /Users/kyoulee/Documents/git/FDF/obj/ft_polygon_transform.o /Users/kyoulee/Documents/git/FDF/obj/ft_polygon.o /Users/kyoulee/Documents/git/FDF/obj/ft_primitive.o /Users/kyoulee/Documents/git/FDF/obj/ft_screan.o /Users/kyoulee/Documents/git/FDF/obj/ft_vector_2.o /Users/kyoulee/Documents/git/FDF/obj/ft_vector_3.o /Users/kyoulee/Documents/git/FDF/modules/Libft/libft.a /Users/kyoulee/Documents/git/FDF/modules/minilibx/minilibx_macos/libmlx.a /Users/kyoulee/Documents/git/FDF/modules/ft_printf/libftprintf.a
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-23 11:32:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 226):
+	$(CC) $(CFLAGS) $(IFLAGS) $(LDFLAGS) $(LDLIBS) $(OBJS) -o $(TARGET)
+	@echo "$(FG_LMAGENTA)$(CC) $(FG_BLUE) $(CFLAGS)"
+	@(for i in $(IFLAGS) $(LDFLAGS); do echo $$i; done)
+	@echo "$(LDLIBS) $(FG_LCYAN)"
+	@(for i in $(OBJS); do echo $$i; done)
+	@echo "$(FG_BLUE)-o $(FG_LYELLOW)$(TARGET)"
+	
+
+clean_minilibx_mms:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 316):
+	@echo "clean $(FG_MAGENTA)module $(FG_LYELLOW)$(notdir $(MINILIBX_SELECT))$(NO_COLOR)$(BG_MAKE1)"
+	rm -f $(ROOTDIR)/$(notdir $(MINILIBX_MMS))
+	$(MAKE) -C $(MINILIBX_MMS_DIR) clean 
+	@echo "$(NO_COLOR)"
+	
+
+# files hash-table stats:
+# Load=78/1024=8%, Rehash=0, Collisions=33/395=8%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+ 
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue Aug 23 11:33:16 2022
+
+ 

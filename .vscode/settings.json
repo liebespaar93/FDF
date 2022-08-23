@@ -1,0 +1,26 @@
+{
+	"files.associations": {
+		"libft.h": "c",
+		"ft_get_next_line.h": "c",
+		"fcntl.h": "c",
+		"mlx.h": "c",
+		"ft_param.h": "c",
+		"ft_mac_keyboard.h": "c",
+		"ft_src.h": "c",
+		"ft_math.h": "c",
+		"ft_matrix.h": "c",
+		"ft_mac_mouse.h": "c",
+		"ft_screan.h": "c",
+		"ft_basis.h": "c",
+		"ft_vector.h": "c",
+		"ft_polygon.h": "c",
+		"chrono": "c",
+		"variant": "c",
+		"array": "c",
+		"string": "c",
+		"string_view": "c",
+		"vector": "c",
+		"iterator": "c",
+		"mac_keycode.h": "c"
+	}
+}
