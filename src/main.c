@@ -4,7 +4,7 @@
 #include <ft_param.h>
 #include <mlx.h>
 #include <ft_loop.h>
-#include <ft_polygon.h>
+#include <ft_polygon.h>3
 #include <ft_math.h>
 #include <ft_draw.h>
 #include <ft_printf.h>
@@ -16,12 +16,12 @@ void	ft_draw_prim(t_param *param, t_ply *ply, t_prim prim)
 		ft_vector_2(ply->v3_buff[prim.p1].x, ply->v3_buff[prim.p1].y), \
 		ft_vector_2(ply->v3_buff[prim.p2].x, ply->v3_buff[prim.p2].y), \
 		0x00FFCC66);
-	if (prim.p2 != (size_t)-1 && prim.p3 != (size_t)-1)
+	if (0 && prim.p2 != (size_t)-1 && prim.p3 != (size_t)-1)
 		ft_draw_line(param, \
 		ft_vector_2(ply->v3_buff[prim.p2].x, ply->v3_buff[prim.p2].y), \
 		ft_vector_2(ply->v3_buff[prim.p3].x, ply->v3_buff[prim.p3].y), \
 		0x00FFCC66);
-	if (0 && prim.p1 != (size_t)-1 && prim.p3 != (size_t)-1)
+	if (prim.p1 != (size_t)-1 && prim.p3 != (size_t)-1)
 		ft_draw_line(param, \
 		ft_vector_2(ply->v3_buff[prim.p3].x, ply->v3_buff[prim.p3].y), \
 		ft_vector_2(ply->v3_buff[prim.p1].x, ply->v3_buff[prim.p1].y), \
@@ -123,7 +123,7 @@ size_t	ft_read_file_size_prim(t_read_file *read_file)
 	data_index = 0;
 	while (read_line)
 	{
-		data_index += ft_atoi_len(read_line->data) - 1;
+		data_index += ft_atoi_len(read_line->data);
 		read_line = read_line->next;
 	}
 	return (data_index);
@@ -151,17 +151,18 @@ t_ply	*ft_fdf_read_file_to_ply_prim_buff(t_ply *ply, t_read_file *read_file)
 	while (read_line)
 	{
 		coord = 0;
-		vec_index_now = ft_atoi_len(read_line->data) - 1;
+		vec_index_now = ft_atoi_len(read_line->data);
 		while (coord < vec_index_now)
 		{
 			ply->prim_buff[index].p1 = vec_index_sum + coord;
-			ply->prim_buff[index].p2 = vec_index_sum + coord + 1;
+			if (coord + 1 < vec_index_now)
+				ply->prim_buff[index].p2 = vec_index_sum + coord + 1;
 			if (coord < vec_index_prev)
 				ply->prim_buff[index].p3 = vec_index_sum + coord - vec_index_prev;
 			coord++;
 			index++;
 		}
-		vec_index_sum += vec_index_now + 1;
+		vec_index_sum += vec_index_now;
 		vec_index_prev = vec_index_now;
 		read_line = read_line->next;
 	}
@@ -186,6 +187,34 @@ t_ply	*ft_fdf_ply_max_v3(t_ply *ply)
 	}
 	return (ply);
 }
+
+t_ply	*ft_polygon_new_cpy(t_ply *ply)
+{
+	t_ply	*new;
+	size_t	i;
+
+	if (!ft_zeromalloc((void **)&new, sizeof(t_ply)) || \
+		!ft_zeromalloc((void **)&new->v3_buff, sizeof(t_vec3) * ply->size_v3) || \
+		!ft_zeromalloc((void **)&new->prim_buff, sizeof(t_prim) * ply->size_prim))
+		return (ft_ply_free(&new));
+	new->max_v3 = ply->max_v3;
+	new->size_v3 = ply->size_v3;
+	new->size_prim = ply->size_prim;
+	i = 0;
+	while (i < ply->size_v3)
+	{
+		new->v3_buff[i] = ply->v3_buff[i];
+		i++;
+	}
+	i = 0;
+	while (i < ply->size_prim)
+	{
+		new->prim_buff[i] = ply->prim_buff[i];
+		i++;
+	}
+	return (new);
+}
+
 int	main(int ar, char * av[])
 {
 	int			fd;
