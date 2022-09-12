@@ -6,7 +6,7 @@
 #    By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/20 10:50:03 by kyoulee           #+#    #+#              #
-#    Updated: 2022/09/07 02:44:15 by kyoulee          ###   ########.fr        #
+#    Updated: 2022/09/13 08:31:29 by kyoulee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -137,7 +137,9 @@ INCLUDE_MINILIBX_MMS_DIR = $(MINILIBX_MMS_DIR)
 
 #####***** SRC *****#####
 SRC_C_SRC =	main.c\
-			ft_fdf.c
+			ft_fdf_ply_prim.c\
+			ft_fdf_ply_v3.c\
+			ft_fdf_ply.c
 
 SRC_C = $(addprefix $(SRC_DIR)/, $(SRC_C_SRC))
 
