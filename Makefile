@@ -6,7 +6,7 @@
 #    By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/20 10:50:03 by kyoulee           #+#    #+#              #
-#    Updated: 2022/09/13 08:31:29 by kyoulee          ###   ########.fr        #
+#    Updated: 2022/09/13 08:36:37 by kyoulee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -333,7 +333,7 @@ clean_minilibx_mms :
 
 MODULE_CLEAN = clean
 
-clean : clean_libft $(MINILIBX_SELECT_CLEAN)
+clean : clean_libft clean_ft_printf $(MINILIBX_SELECT_CLEAN)
 	rm -f $(OBJS_CLEAN)
 
 fclean : OBJS_CLEAN+=$(TARGET)
