@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:30:57 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/09/07 03:40:24 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/13 08:27:20 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_scanline_x(t_vec2 standard, t_vec2 next, t_param *param)
 	current = standard;
 	while (current.x <= next.x)
 	{
-		mix_color = ft_get_color(ft_percent(standard.x, next.x, current.x), 
+		mix_color = ft_get_color(ft_percent(standard.x, next.x, current.x), \
 			standard.color, next.color);
 		if (0 <= current.x && current.x < CANVAS_X + CANVAS_WIDTH && \
 			0 <= current.y && current.y < CANVAS_Y + CANVAS_HEIGHT)
@@ -48,7 +48,7 @@ void	ft_scanline_y(t_vec2 standard, t_vec2 next, t_param *param)
 	float	sign;
 	t_vec3	current;
 	int		mix_color;
-	
+
 	norm_titl = ft_abs((next.x - standard.x) / (next.y - standard.y));
 	error = 0;
 	sign = ft_sign(next.x - standard.x);
@@ -57,7 +57,7 @@ void	ft_scanline_y(t_vec2 standard, t_vec2 next, t_param *param)
 	current.z = 0;
 	while (current.y <= next.y)
 	{
-		mix_color = ft_get_color(ft_percent(standard.y, next.y, current.y), 
+		mix_color = ft_get_color(ft_percent(standard.y, next.y, current.y), \
 			standard.color, next.color);
 		if (0 <= current.x && current.x < CANVAS_X + CANVAS_WIDTH && \
 			0 <= current.y && current.y < CANVAS_Y + CANVAS_HEIGHT)

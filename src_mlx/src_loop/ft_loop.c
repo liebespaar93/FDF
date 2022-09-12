@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 22:11:21 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/09/12 07:44:43 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/13 08:26:37 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ int	ft_key_update(t_screan *screan, t_keyboard *keyboard)
 {
 	t_vec2	v2;
 
-	if (!keyboard->x && !keyboard->y && !keyboard->contour_line && !keyboard->zoom)
+	if (!keyboard->x && !keyboard->y && \
+		!keyboard->contour_line && !keyboard->zoom)
 		return (0);
 	v2 = ft_vector_2(keyboard->x, keyboard->y);
 	screan->origin = ft_vec2_sum(screan->origin, v2);
@@ -29,7 +30,7 @@ int	ft_key_update(t_screan *screan, t_keyboard *keyboard)
 		screan->axis_1.x += keyboard->zoom * 0.1;
 		screan->axis_2.y -= keyboard->zoom * 0.1;
 	}
-	screan->contour_line +=  keyboard->contour_line;
+	screan->contour_line += keyboard->contour_line;
 	keyboard->contour_line = 0;
 	return (1);
 }
@@ -38,7 +39,8 @@ int	ft_mouse_update(t_screan *screan, t_mouse *mouse)
 {
 	t_vec2	v2;
 
-	if (!mouse->x_move && !mouse->y_move && !mouse->x_angle && !mouse->y_angle && !mouse->zoom)
+	if (!mouse->x_move && !mouse->y_move && !mouse->x_angle && \
+		!mouse->y_angle && !mouse->zoom)
 		return (0);
 	v2 = ft_vector_2(mouse->x_move, mouse->y_move);
 	screan->origin = ft_vec2_sum(screan->origin, v2);

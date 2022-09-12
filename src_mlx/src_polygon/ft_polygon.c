@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 00:32:17 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/23 11:06:21 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/13 08:25:19 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ t_ply	*ft_ply_set(t_ply *ply, int ****coord_3D)
 	t_prim	*prim_buff;
 	t_vec3	*v3_buff;
 	void	**coord_temp;
-	
+
 	if (!ply)
 		return (NULL);
 	prim_buff = NULL;
@@ -75,10 +75,7 @@ t_ply	*ft_ply_set(t_ply *ply, int ****coord_3D)
 		while (coord_temp[1])
 		{
 			while (coord_temp[2])
-			{
-				
-				coord_temp[2] = (int *)coord_temp[2] + 1;	
-			}
+				coord_temp[2] = (int *)coord_temp[2] + 1;
 			coord_temp[1] = (int **)coord_temp[1] + 1;
 		}
 		coord_temp[0] = (int ***)coord_temp[0] + 1;

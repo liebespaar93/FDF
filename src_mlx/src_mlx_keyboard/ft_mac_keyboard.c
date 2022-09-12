@@ -6,13 +6,11 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 22:23:44 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/25 21:06:01 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/13 08:28:06 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ft_mac_keyboard.h>
-
-
 
 int	ft_key_up(int keycode, t_keyboard *keyboard)
 {

@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:29:35 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/09/07 03:39:42 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/13 08:28:01 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ void	ft_draw_line_color(t_param *param, t_vec2 v2_1, t_vec2 v2_2)
 
 void	ft_draw_basis2_axis(t_param *param, int x, int y, int color)
 {
-	t_vec2 v2_1;
-	t_vec2 v2_2;
+	t_vec2	v2_1;
+	t_vec2	v2_2;
 
 	v2_1 = ft_vector_2(0, -x / 2);
 	v2_1.color = color;
@@ -52,7 +52,7 @@ void	ft_draw_basis2_axis(t_param *param, int x, int y, int color)
 	v2_1 = ft_vector_2(-y / 2, 0);
 	v2_1.color = color;
 	v2_2 = ft_vector_2(y / 2, 0);
-	v2_2.color = color;	
+	v2_2.color = color;
 	ft_draw_line(param, v2_1, v2_2);
 }
 
