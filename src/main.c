@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 21:07:51 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/09/13 08:21:53 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/13 08:39:02 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 #include <ft_polygon.h>
 #include <ft_math.h>
 #include <ft_draw.h>
-#include <ft_printf.h>
 #include <ft_color.h>
 #include <ft_mlx_color.h>
 #include <ft_fdf.h>
