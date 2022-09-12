@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 07:16:40 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/20 12:09:33 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/07 02:38:50 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ t_vec3	ft_vec3_mult_mtx4(t_vec3 v3, t_mtx4 m4)
 	temp.x /= w;
 	temp.y /= w;
 	temp.z /= w;
+	temp.color = v3.color;
 	return (temp);
 }
 
@@ -57,6 +58,7 @@ t_vec3	ft_mtx4_mult_vec3(t_mtx4 m4, t_vec3 v3)
 	temp.x /= w;
 	temp.y /= w;
 	temp.z /= w;
+	temp.color = v3.color;
 	return (temp);
 }
 

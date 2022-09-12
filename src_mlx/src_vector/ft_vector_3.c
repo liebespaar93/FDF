@@ -6,12 +6,13 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 00:18:18 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/20 12:25:47 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/03 20:34:09 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ft_vector.h>
 #include <ft_math.h>
+#include <ft_mlx_color.h>
 
 t_vec3	ft_vector_3(float x, float y, float z)
 {
@@ -20,6 +21,7 @@ t_vec3	ft_vector_3(float x, float y, float z)
 	new.x = x;
 	new.y = y;
 	new.z = z;
+	new.color = 0x00FFFFFF;
 	return (new);
 }
 

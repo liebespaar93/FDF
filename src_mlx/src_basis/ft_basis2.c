@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:35:54 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/22 13:35:12 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/08/25 13:02:23 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_basis2	*ft_basis2_init(void)
 	t_vec2	v2_2;
 
 	v2_1 = ft_vector_2(1, 0);
-	v2_2 = ft_vector_2(0, 1);
+	v2_2 = ft_vector_2(0, -1);
 	return (ft_new_basis2(v2_1, v2_2));
 }
 

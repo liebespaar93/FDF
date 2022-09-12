@@ -21,6 +21,12 @@
 		"string_view": "c",
 		"vector": "c",
 		"iterator": "c",
-		"mac_keycode.h": "c"
+		"mac_keycode.h": "c",
+		"ft_printf.h": "c",
+		"ft_draw.h": "c",
+		"ft_loop.h": "c",
+		"ft_color.h": "c",
+		"ft_mlx_color.h": "c",
+		"ft_fdf.h": "c"
 	}
 }

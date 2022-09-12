@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:45:48 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/22 10:55:27 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/08/23 16:59:46 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ typedef struct s_param
 	t_mtx2		m2_angle;
 
 	t_ply		*ply;
+	t_ply		*ply_origin;
 
 	t_keyboard	*keyboard;
 	t_mouse		*mouse;

@@ -6,11 +6,12 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 22:24:24 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/23 11:16:48 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/08/25 20:50:29 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ft_mac_keyboard.h>
+#include <stdlib.h>
 
 int	ft_keydown_plus_min(int keycode, t_keyboard *keyboard)
 {
@@ -61,5 +62,7 @@ int	ft_keydown_option(int keycode, t_keyboard *keyboard)
 		keyboard->shift = 1;
 		f++;
 	}
+	else if (keycode == KEY_ESC && ++f)
+		exit(1);
 	return (f);
 }

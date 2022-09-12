@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:46:47 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/21 10:03:26 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/08 03:00:46 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,9 @@ t_param	*ft_param_free(t_param **param_ptr)
 		if (param->basis2)
 			free(param->basis2);
 		if (param->ply)
-			free(param->ply);
+			ft_ply_free(&param->ply);
+		if (param->ply_origin)
+			ft_ply_free(&param->ply_origin);
 		if (param->keyboard)
 			free(param->keyboard);
 		if (param->mouse)

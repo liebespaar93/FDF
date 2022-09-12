@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_polygon_transform.c                             :+:      :+:    :+:   */
+/*   ft_vector_to.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/07 00:32:17 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/09/12 07:34:28 by kyoulee          ###   ########.fr       */
+/*   Created: 2022/09/07 01:34:35 by kyoulee           #+#    #+#             */
+/*   Updated: 2022/09/07 01:50:17 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_polygon.h>
+#include <ft_vector.h>
 
-t_ply	*ft_polygon_transform(t_ply *ply, t_mtx4 m4)
+t_vec2	ft_vec_3to2(t_vec3 v3)
 {
-	int		i;
-	t_vec3	*v3_buff;
-
-	v3_buff = ply->v3_buff;
-	i = 0;
-	while ((size_t)i++ < ply->size_v3)
-	{
-		*v3_buff = ft_mtx4_mult_vec3(m4, *v3_buff);
-		v3_buff++;
-	}
-	return (ply);
+	t_vec2	v2;
+	
+	v2.x = v3.x;
+	v2.y = v3.y;
+	v2.color = v3.color;
+	return (v2);
 }

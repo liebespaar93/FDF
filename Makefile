@@ -6,7 +6,7 @@
 #    By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/20 10:50:03 by kyoulee           #+#    #+#              #
-#    Updated: 2022/08/23 11:32:47 by kyoulee          ###   ########.fr        #
+#    Updated: 2022/09/07 02:44:15 by kyoulee          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -93,6 +93,7 @@ SRC_MLX_BASIS_DIR = $(SRC_MLX_DIR)/src_basis
 SRC_MLX_DRAW_DIR = $(SRC_MLX_DIR)/src_draw
 SRC_MLX_LOOP_DIR = $(SRC_MLX_DIR)/src_loop
 SRC_MLX_MATRIX_DIR = $(SRC_MLX_DIR)/src_matrix
+SRC_MLX_COLOR_DIR = $(SRC_MLX_DIR)/src_mlx_color
 SRC_MLX_KEYBOARD_DIR = $(SRC_MLX_DIR)/src_mlx_keyboard
 SRC_MLX_MOUSE_DIR = $(SRC_MLX_DIR)/src_mlx_mouse
 SRC_MLX_PARAM_DIR = $(SRC_MLX_DIR)/src_param
@@ -135,7 +136,8 @@ MINILIBX_MMS_DIR = $(MINILIBX_DIR)/minilibx_mms_20191025_beta
 INCLUDE_MINILIBX_MMS_DIR = $(MINILIBX_MMS_DIR)
 
 #####***** SRC *****#####
-SRC_C_SRC =	main.c
+SRC_C_SRC =	main.c\
+			ft_fdf.c
 
 SRC_C = $(addprefix $(SRC_DIR)/, $(SRC_C_SRC))
 
@@ -167,6 +169,10 @@ SRC_MLX_MATRIX_C_SRC = 	ft_matrix_2_mult.c	\
 
 SRC_MLX_MATRIX_C = $(addprefix $(SRC_MLX_MATRIX_DIR)/, $(SRC_MLX_MATRIX_C_SRC))
 
+SRC_MLX_COLOR_C_SRC = ft_mlx_color.c
+
+SRC_MLX_COLOR_C = $(addprefix $(SRC_MLX_COLOR_DIR)/, $(SRC_MLX_COLOR_C_SRC))
+
 SRC_MLX_KEYBOARD_C_SRC = ft_mac_key_down.c	\
 							ft_mac_key_hold.c	\
 							ft_mac_key_up.c	\
@@ -196,7 +202,8 @@ SRC_MLX_SCREAN_C_SRC = ft_screan.c
 SRC_MLX_SCREAN_C = $(addprefix $(SRC_MLX_SCREAN_DIR)/, $(SRC_MLX_SCREAN_C_SRC))
 
 SRC_MLX_VECTOR_C_SRC = ft_vector_2.c	\
-						ft_vector_3.c
+						ft_vector_3.c	\
+						ft_vector_to.c
 
 SRC_MLX_VECTOR_C = $(addprefix $(SRC_MLX_VECTOR_DIR)/, $(SRC_MLX_VECTOR_C_SRC))
 
@@ -207,6 +214,7 @@ OBJS =	$(SRC_C:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)			\
 		$(SRC_MLX_DRAW_C:$(SRC_MLX_DRAW_DIR)/%.c=$(OBJ_DIR)/%.o)	\
 		$(SRC_MLX_LOOP_C:$(SRC_MLX_LOOP_DIR)/%.c=$(OBJ_DIR)/%.o)	\
 		$(SRC_MLX_MATRIX_C:$(SRC_MLX_MATRIX_DIR)/%.c=$(OBJ_DIR)/%.o)	\
+		$(SRC_MLX_COLOR_C:$(SRC_MLX_COLOR_DIR)/%.c=$(OBJ_DIR)/%.o)	\
 		$(SRC_MLX_KEYBOARD_C:$(SRC_MLX_KEYBOARD_DIR)/%.c=$(OBJ_DIR)/%.o)	\
 		$(SRC_MLX_MOUSE_C:$(SRC_MLX_MOUSE_DIR)/%.c=$(OBJ_DIR)/%.o)	\
 		$(SRC_MLX_PARAM_C:$(SRC_MLX_PARAM_DIR)/%.c=$(OBJ_DIR)/%.o)	\
@@ -249,6 +257,9 @@ $(OBJ_DIR)/%.o : $(SRC_MLX_LOOP_DIR)/%.c
 	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/%.o : $(SRC_MLX_MATRIX_DIR)/%.c
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+
+$(OBJ_DIR)/%.o : $(SRC_MLX_COLOR_DIR)/%.c
 	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/%.o : $(SRC_MLX_KEYBOARD_DIR)/%.c

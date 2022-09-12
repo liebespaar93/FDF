@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:42:19 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/05 17:44:36 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/12 08:09:03 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ t_screan	*ft_new_screan(t_vec2 v2_1, t_vec2 v2_2, t_vec2 v_origin)
 		return (NULL);
 	new->axis_1 = v2_1;
 	new->axis_2 = v2_2;
+	new->contour_line = 0;
 	new->origin = v_origin;
 	return (new);
 }
@@ -44,6 +45,7 @@ t_screan	*ft_screan_set(t_screan *screan, t_vec2 v2_1, t_vec2 v2_2, \
 	screan->axis_1 = v2_1;
 	screan->axis_2 = v2_2;
 	screan->origin = v_origin;
+	screan->contour_line = 1;
 	return (screan);
 }
 

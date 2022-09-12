@@ -1,6 +1,6 @@
 [submodule "modules/Libft"]
 	path = modules/Libft
-	url = https://github.com/liebespaar93/Libft
+	url = https://github.com/liebespaar93/Libft.git
 [submodule "modules/minilibx"]
 	path = modules/minilibx
 	url = https://github.com/liebespaar93/minilibx.git

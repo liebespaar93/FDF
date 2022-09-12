@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 00:24:54 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/22 12:06:53 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/12 07:34:35 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ typedef struct s_polygon
 	t_vec3	*v3_buff;
 	size_t	size_v3;
 	t_vec3	max_v3;
+	t_vec3	min_v3;
 }	t_ply;
 
 /* ft_ploygon.c */

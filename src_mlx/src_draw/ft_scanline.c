@@ -6,78 +6,83 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:30:57 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/22 13:02:48 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/07 03:40:24 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ft_draw.h>
 #include <ft_math.h>
 #include <mlx.h>
+#include <ft_mlx_color.h>
 
-void	ft_scanline_x(t_vec2 standard, t_vec2 next, t_param *param, int color)
+void	ft_scanline_x(t_vec2 standard, t_vec2 next, t_param *param)
 {
-	float	norm_x;
-	float	norm_y;
 	float	norm_titl;
 	float	error;
 	float	sign;
+	t_vec2	current;
+	int		mix_color;
 
-	norm_x = next.x - standard.x;
-	norm_y = next.y - standard.y;
-	norm_titl = ft_abs(norm_y / norm_x);
+	norm_titl = ft_abs((next.y - standard.y) / (next.x - standard.x));
 	error = 0;
-	sign = ft_sign(norm_y);
-	while (standard.x <= next.x)
+	sign = ft_sign(next.y - standard.y);
+	current = standard;
+	while (current.x <= next.x)
 	{
-		if (0 <= standard.x && standard.x < CANVAS_X + CANVAS_WIDTH && \
-			0 <= standard.y && standard.y < CANVAS_Y + CANVAS_HEIGHT)
-			ft_backbuffer_put_pixel(standard.x, standard.y, color, param);
+		mix_color = ft_get_color(ft_percent(standard.x, next.x, current.x), 
+			standard.color, next.color);
+		if (0 <= current.x && current.x < CANVAS_X + CANVAS_WIDTH && \
+			0 <= current.y && current.y < CANVAS_Y + CANVAS_HEIGHT)
+			ft_backbuffer_put_pixel(current.x, current.y, mix_color, param);
 		error += norm_titl;
 		if (error >= 0.5 && error--)
-			standard.y += sign;
-		standard.x++;
+			current.y += sign;
+		current.x++;
 	}
 }
 
-void	ft_scanline_y(t_vec2 standard, t_vec2 next, t_param *param, int color)
+void	ft_scanline_y(t_vec2 standard, t_vec2 next, t_param *param)
 {
-	float	norm_x;
-	float	norm_y;
 	float	norm_titl;
 	float	error;
 	float	sign;
-
-	norm_x = next.x - standard.x;
-	norm_y = next.y - standard.y;
-	norm_titl = ft_abs(norm_x / norm_y);
+	t_vec3	current;
+	int		mix_color;
+	
+	norm_titl = ft_abs((next.x - standard.x) / (next.y - standard.y));
 	error = 0;
-	sign = ft_sign(norm_x);
-	while (standard.y <= next.y)
+	sign = ft_sign(next.x - standard.x);
+	current.x = standard.x;
+	current.y = standard.y;
+	current.z = 0;
+	while (current.y <= next.y)
 	{
-		if (0 <= standard.x && standard.x < CANVAS_X + CANVAS_WIDTH && \
-			0 <= standard.y && standard.y < CANVAS_Y + CANVAS_HEIGHT)
-			ft_backbuffer_put_pixel(standard.x, standard.y, color, param);
+		mix_color = ft_get_color(ft_percent(standard.y, next.y, current.y), 
+			standard.color, next.color);
+		if (0 <= current.x && current.x < CANVAS_X + CANVAS_WIDTH && \
+			0 <= current.y && current.y < CANVAS_Y + CANVAS_HEIGHT)
+			ft_backbuffer_put_pixel(current.x, current.y, mix_color, param);
 		error += norm_titl;
 		if (error >= 0.5 && error--)
-			standard.x += sign;
-		standard.y++;
+			current.x += sign;
+		current.y++;
 	}
 }
 
-void	ft_scanline(t_vec2 standard, t_vec2 next, t_param *param, int color)
+void	ft_scanline(t_vec2 standard, t_vec2 next, t_param *param)
 {
 	if (ft_abs(next.y - standard.y) < ft_abs(next.x - standard.x))
 	{
 		if (standard.x < next.x)
-			ft_scanline_x(standard, next, param, color);
+			ft_scanline_x(standard, next, param);
 		else
-			ft_scanline_x(next, standard, param, color);
+			ft_scanline_x(next, standard, param);
 	}
 	else
 	{
 		if (standard.y < next.y)
-			ft_scanline_y(standard, next, param, color);
+			ft_scanline_y(standard, next, param);
 		else
-			ft_scanline_y(next, standard, param, color);
+			ft_scanline_y(next, standard, param);
 	}
 }

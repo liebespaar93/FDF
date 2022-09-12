@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_polygon_transform.c                             :+:      :+:    :+:   */
+/*   ft_mlx_color.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/07 00:32:17 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/09/12 07:34:28 by kyoulee          ###   ########.fr       */
+/*   Created: 2022/08/24 12:36:55 by kyoulee           #+#    #+#             */
+/*   Updated: 2022/09/07 02:54:20 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_polygon.h>
 
-t_ply	*ft_polygon_transform(t_ply *ply, t_mtx4 m4)
-{
-	int		i;
-	t_vec3	*v3_buff;
+#ifndef FT_MLX_COLOR_H
+# define FT_MLX_COLOR_H
 
-	v3_buff = ply->v3_buff;
-	i = 0;
-	while ((size_t)i++ < ply->size_v3)
-	{
-		*v3_buff = ft_mtx4_mult_vec3(m4, *v3_buff);
-		v3_buff++;
-	}
-	return (ply);
-}
+/////***** color *****/////
+# define COLOR_RED			0xEB5353
+# define COLOR_YELLOW		0xF9D923
+# define COLOR_GREEN		0x36AE7C
+# define COLOR_BLUE			0x187498
+# define COLOR_PURPLE		0xA149FA
+
+#include <ft_param.h>
+
+int	ft_get_color(float percentage, int color1, int color2);
+int	ft_color_maker(t_ply *ply, float z);
+#endif

@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 17:41:54 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/07 00:18:15 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/07 02:39:36 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ typedef struct s_vector_2
 {
 	float	x;
 	float	y;
+	int		color;
 }	t_vec2;
 
 typedef struct s_vector_3
@@ -27,6 +28,7 @@ typedef struct s_vector_3
 	float	x;
 	float	y;
 	float	z;
+	int		color;
 }	t_vec3;
 
 /* ft_vector_2 */
@@ -41,5 +43,8 @@ t_vec3	ft_vec3_sum(t_vec3 v3_1, t_vec3 v3_2);
 t_vec3	ft_vec3_mult(t_vec3 v3, float scalar);
 float	ft_vec3_length(t_vec3 v3);
 t_vec3	ft_vec3_normalize(t_vec3 v3);
+
+/* ft_vector_to */
+t_vec2	ft_vec_3to2(t_vec3 v3);
 
 #endif

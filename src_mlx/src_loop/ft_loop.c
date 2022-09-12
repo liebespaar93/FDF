@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 22:11:21 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/23 11:10:23 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/12 07:44:43 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,43 @@
 #include <ft_mac_mouse.h>
 #include <ft_mac_keyboard.h>
 
-void	ft_key_update(t_screan *screan, t_keyboard *keyboard)
+int	ft_key_update(t_screan *screan, t_keyboard *keyboard)
 {
 	t_vec2	v2;
 
+	if (!keyboard->x && !keyboard->y && !keyboard->contour_line && !keyboard->zoom)
+		return (0);
 	v2 = ft_vector_2(keyboard->x, keyboard->y);
 	screan->origin = ft_vec2_sum(screan->origin, v2);
-	screan->axis_1.x += keyboard->zoom;
-	screan->axis_2.y -= keyboard->zoom;
+	if (screan->axis_1.x > 0.1 || keyboard->zoom > 0)
+	{
+		screan->axis_1.x += keyboard->zoom * 0.1;
+		screan->axis_2.y -= keyboard->zoom * 0.1;
+	}
+	screan->contour_line +=  keyboard->contour_line;
+	keyboard->contour_line = 0;
+	return (1);
 }
 
-void	ft_mouse_update(t_screan *screan, t_mouse *mouse)
+int	ft_mouse_update(t_screan *screan, t_mouse *mouse)
 {
 	t_vec2	v2;
 
+	if (!mouse->x_move && !mouse->y_move && !mouse->x_angle && !mouse->y_angle && !mouse->zoom)
+		return (0);
 	v2 = ft_vector_2(mouse->x_move, mouse->y_move);
 	screan->origin = ft_vec2_sum(screan->origin, v2);
-	screan->axis_1.x += mouse->zoom;
-	screan->axis_2.y -= mouse->zoom;
+	if (screan->axis_1.x > 0.1 || mouse->zoom > 0)
+	{
+		screan->axis_1.x += mouse->zoom * 0.1;
+		screan->axis_2.y -= mouse->zoom * 0.1;
+	}
+	screan->x_angle += mouse->x_angle;
+	screan->y_angle += mouse->y_angle;
+	mouse->x_angle = 0;
+	mouse->y_angle = 0;
 	mouse->zoom = 0;
+	return (1);
 }
 
 void	ft_mlx_key_mouse_set(t_param *param)

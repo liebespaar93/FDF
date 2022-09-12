@@ -9,13 +9,12 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceFolder}/a.out",
-			"args": ["./test_maps/100-6.fdf"],
+			"args": ["${workspaceFolder}/test_maps/100-6.fdf"],
 			"stopAtEntry": false,
 			"cwd": "${fileDirname}",
 			"environment": [],
 			"externalConsole": false,
 			"MIMode": "lldb"
 		}
-
 	]
 }
