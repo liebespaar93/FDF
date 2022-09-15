@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 21:07:51 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/09/13 08:39:02 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/15 12:55:44 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,9 +98,9 @@ int	main(int ar, char *av[])
 	t_read_file	*read_file;
 	t_param		*param;
 
-	fd = 0;
-	if (ar == 2)
-		fd = ft_open(av[1], O_RDONLY);
+	if (ar != 2 && ft_error_m("input error"))
+		return (0);
+	fd = ft_open(av[1], O_RDONLY);
 	read_file = ft_read_file(fd);
 	close(fd);
 	param = ft_param_init();

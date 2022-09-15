@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 01:48:51 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/08/20 12:10:29 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/09/15 12:50:10 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_prim	ft_primitive(int p1, int p2, int p3)
 }
 
 /*
-* 90도가 만들어지는 시계 반대방향 회전
+* 90 make angle
 * +x +z, +z -x, -x -z, -z +x
 * +y -x, -x -y, -y +x, +x +y
 * +z +y, +y -z, -z -y, -y +z

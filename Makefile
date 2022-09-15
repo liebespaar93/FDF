@@ -6,14 +6,8 @@
 #    By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/20 10:50:03 by kyoulee           #+#    #+#              #
-#    Updated: 2022/09/13 08:36:37 by kyoulee          ###   ########.fr        #
+#    Updated: 2022/09/15 12:34:41 by kyoulee          ###   ########.fr        #
 #                                                                              #
-# **************************************************************************** #
-
-# **************************************************************************** #
-# option
-# m1 : 맥에서 사용가능하게 mms 라이브러리를 불러옴
-# linux : 아직 만들지 않음 컴파일 단걔 LDLIBS 추가 변경 요구함
 # **************************************************************************** #
 
 TARGET = fdf
@@ -239,6 +233,7 @@ $(TARGET) : $(OBJS) $(LIBFT) $(MINILIBX_SELECT) $(FT_PRINTF)
 	@echo "$(LDLIBS) $(FG_LCYAN)"
 	@(for i in $(OBJS); do echo $$i; done)
 	@echo "$(FG_BLUE)-o $(FG_LYELLOW)$(TARGET)"
+	@echo "$(NO_COLOR)"
 
 $(OBJ_DIR) : 
 	mkdir $@
