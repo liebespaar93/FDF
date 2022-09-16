@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/kyoulee/Documents/git/ft_printf'
+make: Nothing to be done for `all'.
+make: Leaving directory `/Users/kyoulee/Documents/git/ft_printf'
+ 

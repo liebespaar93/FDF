@@ -1,0 +1,846 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Mon Aug 15 12:28:50 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+ 
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 92)
+SRC = ft_printf.c
+# makefile (from `Makefile', line 19)
+IFLAGS = -I $(INCLUDE_DIR) -I $(INCLUDE_LIBFT_DIR)
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 54)
+FG_CYAN = \033[36m
+# makefile (from `Makefile', line 45)
+BG_MAKE2 = \033[48;5;238m
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 24)
+LDLIBS = -lft
+# makefile
+CURDIR := /Users/kyoulee/Documents/git/ft_printf
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 62)
+FG_LCYAN = \033[96m
+# makefile (from `Makefile', line 17)
+CFLAGS = -Wall -Werror -Wextra
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 60)
+FG_LBLUE = \033[94m
+# makefile (from `Makefile', line 70)
+CL_HIDDEN = \033[8m
+# makefile (from `Makefile', line 83)
+OBJ_DIR = ./obj
+# makefile (from `Makefile', line 16)
+CXXFLAGS = $(NULL)
+# makefile (from `Makefile', line 56)
+FG_DGREY = \033[90m
+# makefile (from `Makefile', line 61)
+FG_LMAGENTA = \033[95m
+# makefile (from `Makefile', line 95)
+SRCS_PRINTF_C = src/ft_printf_percent.c
+# makefile (from `Makefile', line 35)
+BG_LGREY = \033[47m
+# makefile (from `Makefile', line 33)
+BG_MAGENTA = \033[45m
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# makefile (from `Makefile', line 30)
+BG_GREEN = \033[42m
+# makefile (from `Makefile', line 63)
+FG_WHITE = \033[97m
+# makefile (from `Makefile', line 148)
+OBJS_CLEAN = $(OBJECTS)
+# makefile (from `Makefile', line 82)
+SRC_PRINTF_PERCENT_CONVERSION_DIR = ./src_printf_percent_conversion
+# makefile (from `Makefile', line 52)
+FG_BLUE = \033[34m
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# makefile (from `Makefile', line 37)
+BG_LRED = \033[101m
+# makefile (from `Makefile', line 59)
+FG_LYELLOW = \033[93m
+# makefile (from `Makefile', line 116)
+SRCS_PRINTF_PERCENT = $(notdir $(SRCS_PRINTF_PERCENT_C))
+# makefile (from `Makefile', line 51)
+FG_YELLOW = \033[33m
+# makefile (from `Makefile', line 77)
+INCLUDE_DIR = $(ROOTDIR)/include
+# makefile (from `Makefile', line 93)
+SRCS_C = ft_va_arg_index.c
+# makefile (from `Makefile', line 31)
+BG_YELLOW = \033[43m
+# makefile (from `Makefile', line 58)
+FG_LGREEN = \033[92m
+# makefile (from `Makefile', line 29)
+BG_RED = \033[41m
+# makefile (from `Makefile', line 46)
+BG_MAKE3 = \033[48;5;240m
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 22)
+LDFLAGS = -L $(LIBFT_DIR)
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 88)
+LIBFT_DIR = $(ROOTDIR)/modules/Libft
+# makefile (from `Makefile', line 80)
+SRC_PRINTF_DIR = ./src_printf
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.lK2opzWzEV/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `Makefile', line 84)
+OBJ_DIR_CLEAN = ./obj
+# makefile (from `Makefile', line 18)
+DFLAGS = $(NULL)
+# makefile (from `Makefile', line 119)
+OBJS = $(SRC:.c=.o) $(SRCS:.c=.o) $(SRCS_PRINTF:.c=.o) $(SRCS_PRINTF_PERCENT:.c=.o) $(SRCS_PRINTF_PERCENT_CONVERSION:.c=.o)
+ 
+# environment
+PWD = /Users/kyoulee/Documents/git/ft_printf
+# makefile (from `Makefile', line 41)
+BG_LMAGENTA = \033[105m
+# makefile (from `Makefile', line 115)
+SRCS_PRINTF = $(notdir $(SRCS_PRINTF_C))
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# makefile (from `Makefile', line 68)
+CL_BLINK = \033[5m
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/kyoulee
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/kyoulee/Library/Application Support/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
+# environment
+LOGNAME = kyoulee
+# makefile (from `Makefile', line 81)
+SRC_PRINTF_PERCENT_DIR = ./src_printf_percent
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 53)
+FG_MAGENTA = \033[35m
+# environment
+XPC_FLAGS = 0x0
+# makefile (from `Makefile', line 66)
+CL_DIM = \033[2m
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 114)
+SRCS = $(notdir $(SRCS_C))
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 87)
+LIBFT = $(LIBFT_DIR)/libft.a
+# makefile (from `Makefile', line 15)
+CC = cc
+# makefile (from `Makefile', line 42)
+BG_LCYAN = \033[106m
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = kyoulee
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 65)
+CL_BOLD = \033[1m
+# makefile (from `Makefile', line 13)
+NAME = libftprintf.a
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile', line 40)
+BG_LBLUE = \033[104m
+# makefile (from `Makefile', line 36)
+BG_DGREY = \033[100m
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# makefile (from `Makefile', line 55)
+FG_LGREY = \033[37m
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/3l/_b_4697s3xj0ly4vm2tfkzk80000gn/T/
+# automatic
+*F = $(notdir $*)
+# makefile (from `Makefile', line 69)
+CL_INVERT = \033[7m
+# makefile (from `Makefile', line 50)
+FG_GREEN = \033[32m
+# environment
+VSCODE_IPC_HOOK = /Users/kyoulee/Library/Application Support/Code/1.70.1-main.sock
+# makefile (from `Makefile', line 105)
+SRCS_PRINTF_PERCENT_CONVERSION_C = src/ft_printf_a_trans.c src/ft_printf_cs.c src/ft_printf_dioux.c src/ft_printf_fega.c src/ft_printf_n.c src/ft_printf_p.c src/ft_printf_syntax_error.c src/ft_printf_syntaxing.c
+# environment
+MallocNanoZone = 0
+ 
+# makefile (from `Makefile', line 43)
+BG_WHITE = \033[107m
+# makefile
+MAKEFLAGS = Rrqp
+# makefile (from `Makefile', line 32)
+BG_BLUE = \033[44m
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MAIL = kyoulee@student.42seoul.kr
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.4278795.4278801
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 34)
+BG_CYAN = \033[46m
+# makefile (from `Makefile', line 57)
+FG_LRED = \033[91m
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# makefile (from `Makefile', line 89)
+INCLUDE_LIBFT_DIR = $(LIBFT_DIR)/include
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x3:0x33
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 79)
+SRC_DIR = ./src
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 38)
+BG_LGREEN = \033[102m
+# makefile (from `Makefile', line 49)
+FG_RED = \033[31m
+# makefile (from `Makefile', line 48)
+FG_BLACK = \033[30m
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 76)
+ROOTDIR = $(abspath $(dir $(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))))
+# makefile (from `Makefile', line 67)
+CL_UDLINE = \033[4m
+# makefile (from `Makefile', line 44)
+BG_MAKE1 = \033[48;5;236m
+# environment
+MAKELEVEL := 0
+# makefile (from `Makefile', line 121)
+OBJECTS = $(patsubst %.o, $(OBJ_DIR)/%.o, $(OBJS))
+# environment
+LANG = C
+# makefile (from `Makefile', line 117)
+SRCS_PRINTF_PERCENT_CONVERSION = $(notdir $(SRCS_PRINTF_PERCENT_CONVERSION_C))
+# environment
+VSCODE_PID = 13860
+# makefile (from `Makefile', line 97)
+SRCS_PRINTF_PERCENT_C = src/ft_printf_asterisk.c src/ft_printf_conversion.c src/ft_printf_flag.c src/ft_printf_length.c src/ft_printf_num_type.c src/ft_printf_precision.c src/ft_printf_width.c
+# makefile (from `Makefile', line 39)
+BG_LYELLOW = \033[103m
+# makefile (from `Makefile', line 72)
+NO_COLOR = \033[0m
+# variable set hash-table stats:
+# Load=135/1024=13%, Rehash=0, Collisions=22/195=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# ./src_printf_percent (device 16777229, inode 4462030): 9 files, no impossibilities.
+# . (device 16777229, inode 4461932): 16 files, no impossibilities.
+# ./src (device 16777229, inode 4462011): 3 files, no impossibilities.
+# ./src_printf (device 16777229, inode 4462028): 3 files, no impossibilities.
+# ./src_printf_percent_conversion (device 16777229, inode 4462038): 11 files, no impossibilities so far.
+# src_printf_percent (device 16777229, inode 4462030): 9 files, no impossibilities.
+# src (device 16777229, inode 4462011): 3 files, no impossibilities.
+# src_printf (device 16777229, inode 4462028): 3 files, no impossibilities.
+# src_printf_percent_conversion (device 16777229, inode 4462038): 11 files, no impossibilities so far.
+
+# 68 files, no impossibilities in 9 directories.
+
+# Implicit Rules
+
+obj/%.o: %.c
+#  commands to execute (from `Makefile', line 134):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/%.o: ./src/%.c
+#  commands to execute (from `Makefile', line 137):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/%.o: ./src_printf/%.c
+#  commands to execute (from `Makefile', line 140):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/%.o: ./src_printf_percent/%.c
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/%.o: ./src_printf_percent_conversion/%.c
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# 5 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+src_printf/ft_printf_percent.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_fega.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:46:13
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_printf_cs.o: src_printf_percent_conversion/ft_printf_cs.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_cs'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+all: libftprintf.a
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_printf_num_type.o: src_printf_percent/ft_printf_num_type.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_num_type'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+.PHONY: all clean fclean re bonus clean_libft
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/ft_printf_width.o: src_printf_percent/ft_printf_width.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_width'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/ft_printf_asterisk.o: src_printf_percent/ft_printf_asterisk.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_asterisk'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_p.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:46:13
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_printf_syntax_error.o: src_printf_percent_conversion/ft_printf_syntax_error.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_syntax_error'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/ft_printf_percent.o: src_printf/ft_printf_percent.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_percent'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 140):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/ft_printf_precision.o: src_printf_percent/ft_printf_precision.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_precision'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 12:27:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent/ft_printf_flag.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ 
+src_printf_percent/ft_printf_width.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_syntaxing.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_printf_length.o: src_printf_percent/ft_printf_length.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_length'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_dioux.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:46:13
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_a_trans.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:46:13
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_printf_n.o: src_printf_percent_conversion/ft_printf_n.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_n'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+bonus: libftprintf.a
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# makefile (from `Makefile', line 167)
+# OBJS_CLEAN += $(NAME)
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+
+obj/ft_printf_fega.o: src_printf_percent_conversion/ft_printf_fega.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_fega'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 128):
+	mkdir obj
+	
+
+# Not a target:
+ft_printf.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent/ft_printf_num_type.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_printf.o: ft_printf.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 134):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src_printf_percent/ft_printf_asterisk.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_cs.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_n.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_va_arg_index.o: src/ft_va_arg_index.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_va_arg_index'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 137):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+obj/ft_printf_conversion.o: src_printf_percent/ft_printf_conversion.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_conversion'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/ft_printf_p.o: src_printf_percent_conversion/ft_printf_p.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_p'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+src_printf_percent/ft_printf_length.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean: clean_libft
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 165):
+	rm -f $(OBJS_CLEAN) 
+	
+
+# Not a target:
+src_printf_percent/ft_printf_precision.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+/Users/kyoulee/Documents/git/ft_printf/modules/Libft/libft.a:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-15 12:27:39
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 152):
+	echo "$(FG_MAGENTA)module $(FG_LYELLOW)Libft$(NO_COLOR) -> $(FG_LCYAN)$(LIBFT)$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(LIBFT_DIR) bonus
+	@echo "$(NO_COLOR)"
+	
+
+obj/ft_printf_syntaxing.o: src_printf_percent_conversion/ft_printf_syntaxing.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_syntaxing'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/ft_printf_dioux.o: src_printf_percent_conversion/ft_printf_dioux.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_dioux'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+obj/ft_printf_a_trans.o: src_printf_percent_conversion/ft_printf_a_trans.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_a_trans'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 146):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+src_printf_percent_conversion/ft_printf_syntax_error.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean_libft:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 159):
+	@echo "clean $(FG_MAGENTA)module $(FG_LYELLOW)$(notdir $(LIBFT))$(NO_COLOR)$(BG_MAKE1)"
+	$(MAKE) -C $(LIBFT_DIR) fclean 
+	@echo "$(NO_COLOR)"
+	
+
+libftprintf.a: obj obj/ft_printf.o obj/ft_va_arg_index.o obj/ft_printf_percent.o obj/ft_printf_asterisk.o obj/ft_printf_conversion.o obj/ft_printf_flag.o obj/ft_printf_length.o obj/ft_printf_num_type.o obj/ft_printf_precision.o obj/ft_printf_width.o obj/ft_printf_a_trans.o obj/ft_printf_cs.o obj/ft_printf_dioux.o obj/ft_printf_fega.o obj/ft_printf_n.o obj/ft_printf_p.o obj/ft_printf_syntax_error.o obj/ft_printf_syntaxing.o /Users/kyoulee/Documents/git/ft_printf/modules/Libft/libft.a
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-15 12:27:39
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 131):
+	ar -src $(NAME) $(OBJECTS) $(LIBFT)
+	
+
+obj/ft_printf_flag.o: src_printf_percent/ft_printf_flag.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf_flag'
+#  Last modified 2022-08-15 12:27:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 143):
+	$(CC) $(CPPFLAGS) $(IFLAGS) -c $< -o $@
+	
+
+# Not a target:
+src/ft_va_arg_index.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:54:58
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src_printf_percent/ft_printf_conversion.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 11:02:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=49/1024=5%, Rehash=0, Collisions=18/206=9%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon Aug 15 12:28:50 2022
+
+ 
